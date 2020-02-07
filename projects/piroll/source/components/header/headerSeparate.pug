@@ -1,0 +1,21 @@
+include ../link/link
+
+.container.container__header
+    .header-velcro
+        .container-fixed
+            header
+                .header-brand
+                    .header-logo
+                        a(href='#')
+                            img(src=require("../../img/logo.png"))
+
+                    button.header-trigger.pe-7s-menu.pe-3x
+                ul.header-navigation
+                    li
+                        +link('home', 'home.html')
+                    li
+                        +link('about', 'about.html')
+                    li
+                        +link('contract', 'contact.html')
+                    li
+                        +link('SPA', 'index.html')

@@ -1,0 +1,47 @@
+@media screen and (max-width: width-break-screen(1)) {
+  .container__skills .skills .skill-item > .skill-progress {
+    .skill-progress-background {
+      width: 400px;
+      .skill-progress-bar {
+        @for $i from 1 through 100 {
+          &.skill-progress-bar-#{$i} {
+            width: (400px/100*$i);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: width-break-screen(4)) {
+  .container__skills .skills .skill-item > .skill-progress {
+    padding-bottom: 20px;
+    .skill-progress-background {
+      width: 350px;
+      .skill-progress-bar {
+        @for $i from 1 through 100 {
+          &.skill-progress-bar-#{$i} {
+            width: (350px/100*$i);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: width-break-screen(5)) {
+  .container__skills .skills .skill-item > .skill-progress {
+    padding-bottom: 15px;
+    .skill-progress-background {
+      width: 250px;
+      .skill-progress-bar {
+        @for $i from 1 through 100 {
+          &.skill-progress-bar-#{$i} {
+            width: (250px/100*$i);
+          }
+        }
+      }
+    }
+  }
+}
+

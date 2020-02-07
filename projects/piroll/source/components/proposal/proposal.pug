@@ -1,0 +1,22 @@
+include ./../title/title
+include ./../button/button
+
+.container.container__proposal#contract
+    .container-fixed
+        .proposal
+            +title("Need a Project?")
+            p.proposal_content Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.
+
+            form(class="contact_form" action="" method="post" name="contact_form")
+                .form-name
+                    .cf_element
+                        input(type='text' placeholder='Your Name' class='cf_w2 cf_h1')
+                    .cf_element
+                        input(type='text' placeholder='Your Email' class='cf_w2 cf_h1')
+
+                .cf_element
+                    input(type='text' placeholder='Your Title' class='cf_w1 cf_h1')
+
+                .cf_element
+                    textarea(placeholder='Your Comment' class='cf_w1 cf_h10')
+            +button("send message")

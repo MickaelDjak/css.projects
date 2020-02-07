@@ -1,0 +1,142 @@
+.background {
+	background: #f9f9f9;
+	font-family: Myriad Pro;
+}
+
+.container {
+	background: #ffffff;
+	width: 1060px;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0px 45px;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+.logo {
+	padding: 50px 0px;
+}
+
+nav {
+	height: 50px;
+	background: linear-gradient(to bottom, #5d5d5d, #444343); 
+}
+
+.nav__link {
+	vertical-align: center;
+	display: flex;
+}
+
+.nav__link li {
+    background: linear-gradient(to bottom, #5d5d5d, #444343); 
+    margin: 0px 20px;
+    padding: 17px 20px;
+    
+}
+
+.nav__link li:hover {
+    background: linear-gradient(to bottom, #5d5d5d, #2e2e2e); 
+    cursor: pointer;
+}
+
+.nav__link a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.wrapper {
+	display: flex;
+	padding-top: 25px;
+}
+
+aside {
+	width: 30%	;
+}
+
+.aside__link {
+	display: flex;
+	flex-direction: column;
+}
+
+.aside__link li {
+	border-top: 2px solid #c8c8c8;
+	border-left: 2px solid #c8c8c8;
+	border-right: 2px solid #c8c8c8;
+    margin: 0px 20px;
+    padding: 17px 20px;
+    font-family: Myriad Pro;
+    width: 240px;
+    transition: padding 1s ease-out, width 1s ease-out;
+}
+
+.aside__link li:last-child {
+	border-bottom: 2px solid #c8c8c8;
+
+}
+
+.aside__link li:hover {
+    margin: 0px 20px;
+    padding: 17px 35px;
+    font-family: Myriad Pro;
+    width: 210px;
+}
+
+.aside__link a {
+	color: #656363;
+	text-decoration: none;
+	transition: color 2s;
+}
+
+.aside__link a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+main {
+	width: 70%;
+}
+
+main .bike {
+	border: 2px solid #c8c8c8;
+}
+
+main .bike img {
+	display: block;
+	margin: 20px auto;
+}
+
+main p {
+	padding: 24px 0px 25px 24px; 
+	color: #565656;
+	font-size: 1.1em;
+}
+
+footer {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.footer__link {
+	height: 40px;
+	background: #e1e1e1; 
+}
+
+.footer__link a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.footer__link a:hover {
+	display: block;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.footer__link li {
+	display: inline-block;
+    margin: 0px 20px;
+    padding: 15px 20px;
+}
+
+.footer__link li:last-child {
+	float: right;
+}

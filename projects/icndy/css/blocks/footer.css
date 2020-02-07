@@ -1,0 +1,18 @@
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 68px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1114px) {
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-down__list {
+        padding-bottom: 20px;
+    }
+}

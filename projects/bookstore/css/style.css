@@ -1,0 +1,16 @@
+@import "reset.css";
+@import "core.css";
+@import "../fonts/segoe/stylesheet.css";
+@import "blocks/account-menu.css";
+@import "blocks/tools.css";
+@import "blocks/search.css";
+@import "blocks/your-cart.css";
+@import "blocks/wish-list.css";
+@import "blocks/menu.css";
+@import "blocks/banner.css";
+@import "blocks/content.css";
+@import "blocks/category.css";
+@import "blocks/tab.css";
+@import "blocks/product-card.css";
+@import "blocks/footer.css";
+@import "blocks/sail.css";

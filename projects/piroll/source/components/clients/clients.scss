@@ -1,0 +1,24 @@
+.clients {
+  padding: 71px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    transition: all 1s;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 1s;
+    }
+  }
+}
+
+@media screen and (max-width: width-break-screen(4)) {
+  .clients {
+    padding: 20px 0;
+    flex-direction: column;
+    img {
+      padding: 10px;
+    }
+  }
+}

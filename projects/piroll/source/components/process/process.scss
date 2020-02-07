@@ -1,0 +1,37 @@
+@import "./../../shared/styles/functions";
+@import "./../title/title.scss";
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  .content {
+    width: width-of-element(2);
+    display: flex;
+    align-items: center;
+    padding-bottom: 57px;
+    text-align: center;
+  }
+  .video-content {
+    video {
+      transition: all 1s;
+      width: 921px;
+      height: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: width-break-screen(2)) {
+  .process .video-content video {
+    width: 690px;
+    height: 450px;
+
+  }
+}
+
+@media screen and (max-width: width-break-screen(3)) {
+  .process {
+    display: none;
+  }
+}

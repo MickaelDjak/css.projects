@@ -1,0 +1,143 @@
+.post_wrapper {
+	background-color: $colorBackgroundLight;
+	.post {
+		width: $widthX;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 40px 0px;
+		.post__start {
+			width: 50%;
+			flex-direction: column;
+			padding: 30px;
+			transition: all 0.5s;
+			#post__slider {
+				.slide {
+					display: none;
+					.post__message {
+						position: relative;
+						padding: 0px 40px;
+						img {
+							position: absolute;
+							left: 10px;
+							top: 20px;
+						}
+						.post_continer {
+							background: #fff;
+							padding: 30px;
+							h3 {
+								font-weight: 800;
+								text-transform: uppercase;
+								margin-bottom: 20px;
+								font-size: 1.5em;
+								span {
+									color: $colorSecondaryLight;
+								}
+							}
+							p {
+								font-size: 1.25em;
+							}
+						}
+					}
+					&.showing {
+						display: block;
+					}
+				}
+			}
+			.post_slide__radiobutton {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				div {
+					@include radio-button(5px, 5px, 10px, 10px, 15px, 10px, $transparentMiddle, $colorMainLight);
+					margin-top: 25px;
+				}
+			}
+		}
+		.post__updates {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			padding: 60px 30px;
+			h3 {
+				font-weight: 800;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			.post__update {
+				display: flex;
+				margin: 5px 0px;
+				img {
+					padding-right: 20px;
+				}
+				div {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					h4 {
+						font-weight: 900;
+					}
+				}
+			}
+			a {
+				text-decoration: none;
+				align-self: flex-end;
+				font-size: 1.25em;
+				margin-top: 15px;
+				color: $colorMainDark;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.post_wrapper {
+		.post {
+			width: $widthL;
+			.post__start {
+				padding: 10px;
+			}
+			.post__updates {
+				padding: 60px 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.post_wrapper {
+		.post {
+			width: $widthM;
+			flex-direction: column;
+			.post__start {
+				width: auto;
+				padding: 10px;
+			}
+			.post__updates {
+				width: auto;
+				padding: 10px 60px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.post_wrapper {
+		.post {
+			width: $widthS;
+			flex-direction: column;
+			padding: 10px;
+			.post__start {
+				padding: 10px;
+			}
+			.post__updates {
+//				width: auto;
+				padding: 10px;
+			}
+		}
+	}
+}

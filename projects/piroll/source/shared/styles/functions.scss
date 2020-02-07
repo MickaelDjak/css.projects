@@ -1,0 +1,46 @@
+@import 'constants';
+@import "./../../../node_modules/mathsass/dist/math";
+
+@function width-of-element($size) {
+  @return $width-basis / $size;
+}
+
+@function width-break-screen($number) {
+  @return $width-basis * pow($width-compress-rotation, ($number - 1)) * pow($width-trigger-rotation, $number);
+}
+
+@function width-to-screen($number) {
+  @return $width-basis * pow($width-compress-rotation, $number) ;
+}
+
+@function height-of-element($size) {
+  @if $size == 1 {
+    @return 755px;
+  } @else if $size == 2 {
+    @return 672px;
+  } @else if $size == 3 {
+    @return 573px;
+  } @else if $size == 4 {
+    @return 537px;
+  } @else if $size == 5 {
+    @return 503px;
+  } @else if $size == 6 {
+    @return 415px;
+  } @else if $size == 7 {
+    @return 303px;
+  } @else if $size == 8 {
+    @return 285px;
+  } @else if $size == 9 {
+    @return 243px;
+  } @else if $size == 10 {
+    @return 203px;
+  }
+}
+
+@function font-size-value($size) {
+  @return $font-size-basis *  pow($font-size-rotation ,$size);
+}
+
+@function line-height-value($size) {
+  @return $line-height-basis * pow($line-height-rotation ,$size);
+}

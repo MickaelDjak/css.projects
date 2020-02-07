@@ -1,0 +1,16 @@
+.btn {
+  box-sizing: border-box;
+  background: $color-ca;
+  border: 1px solid $color-ca;
+  width: 178px;
+  height: 52px;
+  color: $color-wa;
+  text-transform: uppercase;
+  outline: none;
+  transition: 0.25s all;
+}
+
+.btn:hover {
+  background: transparent;
+  color: $color-ca;
+}

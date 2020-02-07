@@ -1,0 +1,107 @@
+.tab__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab__menu-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -1px;
+    z-index: 1;
+}
+
+.tab__menu-item {
+    padding: 5px 13px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    border-left: 1px solid rgba(0, 0, 1, 0.16);;
+    border-top: 1px solid rgba(0, 0, 1, 0.16);;
+    border-bottom: 1px solid rgba(0, 0, 1, 0.16);;
+    color: #6b6969;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+    transition: padding 500ms;
+}
+
+.tab__menu-item--active {
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    color: #464646;
+    font-weight: 400;
+}
+
+.tab__menu-item:last-child {
+    border-right: 1px solid rgba(0, 0, 1, 0.16);;
+}
+
+.tab__menu-item:hover {
+    padding-top: 1px;
+    padding-bottom: 9px;
+}
+
+.tab__body {
+    border-left: 1px solid rgba(0, 0, 1, 0.16);;
+    border-right: 1px solid rgba(0, 0, 1, 0.16);;
+    border-top: 1px solid rgba(0, 0, 1, 0.16);;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+}
+
+.tab__pagination {
+    border-left: 1px solid rgba(0, 0, 1, 0.16);;
+    border-right: 1px solid rgba(0, 0, 1, 0.16);;
+    border-bottom: 1px solid rgba(0, 0, 1, 0.16);;
+    padding: 0 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tab__page {
+    padding: 8px;
+    border: 1px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.tab__page--active, .tab__page:hover {
+    border: 1px solid rgba(0, 0, 1, 0.16);
+    border-bottom: 4px solid #79b260;
+}
+
+
+@media (max-width: 1094px) {
+    .tab__body {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 840px) {
+    .tab__body {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 770px) {
+    .tab__body {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab__menu-item {
+        padding: 5px 13px;
+        font-size: 13px;
+
+        line-height: 20px;
+    }
+
+}

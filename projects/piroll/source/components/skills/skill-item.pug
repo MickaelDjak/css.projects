@@ -1,0 +1,8 @@
+mixin skill-item(skill_name, percent)
+    .skill-item
+        .skill-description
+            span.skill-name= skill_name
+            span.skill-percent= percent + "%"
+        .skill-progress
+            .skill-progress-background
+                .skill-progress-bar(class= 'skill-progress-bar-' + percent )

@@ -1,0 +1,24 @@
+.sail {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f05356;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+}
+
+.sail__price {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.sail__off {
+    font-size: 13px;
+    font-weight: 400;
+}

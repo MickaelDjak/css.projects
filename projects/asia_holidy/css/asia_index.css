@@ -1,0 +1,103 @@
+body {
+	background-image: url('../img/background.png');
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: auto;
+}
+
+.main {
+	width: 900px;
+	height: 100vh;
+	margin: 0px auto;
+	padding: 0px 50px;
+	font-family: Tahoma;
+	color: #dfdfdf;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+header .logo {
+	position: relative;
+	bottom: 10px;
+	left: 0px;
+	z-index: 2;	
+}
+
+header .tree {
+	position: relative;
+	bottom: 10px;
+	right: 160px;
+	z-index: 1;	
+	opacity: 0.4;
+}
+
+header a {
+	text-decoration: none;
+	text-decoration-color: red;
+}
+
+header .header-left {
+	height: 130px;
+	float: left;
+}
+
+header .header-right {
+	float: right;
+	color: #ffffff;
+	display: flex;
+	margin-top: 80px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.header-right h2,
+.header-right p {
+	align-self: flex-start;
+	justify-content: flex-end;
+	font-weight: 900;
+	font-size: 1.5em;
+}
+
+header .header-fixed {
+	clear: both;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: center;
+}
+
+main div img {
+	border: 2px solid #646464;
+	width:  260px;
+	margin: 0px 8px;
+	padding: 10px;
+	transition: box-shadow 1s;
+}
+
+main div img:hover { 
+	box-shadow: inset 0px 0px 8px 8px #ffffff;
+/*	background: #ffffff;*/
+}
+
+main div p {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+footer {
+	margin-top: -50px;
+}
+
+footer p {
+	color: #ffffff;
+	text-align: center;
+}

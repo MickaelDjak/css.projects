@@ -1,0 +1,82 @@
+@import "functions";
+
+.wrapper-global {
+  font-family: $font-family-a;
+  line-height: line-height-value(1);
+  font-size: 100%;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.container-fixed {
+  max-width: width-of-element(1);
+  margin: auto;
+  transition: all 1s;
+}
+
+@media screen and (max-width: width-break-screen(1)) {
+  .wrapper-global {
+    line-height: line-height-value(0.95);
+    font-size: 90%;
+  }
+
+  .container-fixed {
+    max-width: width-to-screen(1);
+    //background: #fd00002b;
+  }
+}
+
+@media screen and (max-width: width-break-screen(2)) {
+  .wrapper-global {
+    line-height: line-height-value(0.8);
+    font-size: 85%;
+  }
+
+  .container-fixed {
+    max-width: width-to-screen(2);
+    //background: #00b5fd2b;
+  }
+}
+
+@media screen and (max-width: width-break-screen(3)) {
+  .wrapper-global {
+    line-height: line-height-value(0.65);
+    font-size: 80%;
+  }
+
+  .container-fixed {
+    max-width: width-to-screen(3);
+    //background: #19fd002b;
+  }
+}
+
+@media screen and (max-width: width-break-screen(4)) {
+  .wrapper-global {
+    line-height: line-height-value(0.3);
+    font-size: 75%;
+  }
+
+  .container-fixed {
+    max-width: width-to-screen(4);
+    //background: #f902fd38;
+  }
+}
+
+@media screen and (max-width: width-break-screen(5)) {
+  .wrapper-global {
+    line-height: line-height-value(0.1);
+    font-size: 70%;
+  }
+
+  .container-fixed {
+    max-width: width-to-screen(5);
+    //background: #ecfd002b;
+  }
+}
+

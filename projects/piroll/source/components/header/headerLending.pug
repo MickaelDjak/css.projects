@@ -1,0 +1,29 @@
+include ../link/link
+
+.container.container__header
+    .header-velcro
+        .container-fixed
+            header
+                .header-brand
+                    .header-logo
+                        a(href='#')
+                            img(src=require("./../../img/logo.png"))
+
+                    button.header-trigger.pe-7s-menu.pe-3x
+                ul.header-navigation
+                    li
+                        +link('home', '#')
+                    li
+                        +link('about', '#about')
+                    li
+                        +link('work', '#work')
+                    li
+                        +link('process', '#process')
+                    li
+                        +link('services', '#services')
+                    li
+                        +link('testimonials', '#testimonials')
+                    li
+                        +link('contract', '#contract')
+                    li
+                        +link('MPA', 'home.html')

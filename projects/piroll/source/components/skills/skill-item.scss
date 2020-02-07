@@ -1,0 +1,35 @@
+.skill-item > .skill-description {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  .skill-percent {
+    padding-left: 15px;
+  }
+}
+
+.skill-item > .skill-progress {
+  padding-bottom: 40px;
+  .skill-progress-background {
+    width: 500px;
+    height: 3px;
+    background-color: #dddddd;
+    position: relative;
+    .skill-progress-bar {
+      height: 3px;
+      background-color: $color-ca;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @for $i from 1 through 100 {
+        &.skill-progress-bar-#{$i} {
+          width: (500px/100*$i);
+        }
+      }
+    }
+  }
+}
+
+.skill-item:last-child {
+  .skill-progress {
+    padding-bottom: 0;
+  }
+}

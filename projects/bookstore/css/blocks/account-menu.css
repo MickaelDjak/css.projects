@@ -1,0 +1,31 @@
+.account-menu {
+    background-color: #424242;
+}
+
+.account-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 8px 0 4px;
+}
+
+.account-menu__item {
+    margin-left: 27px;
+}
+
+.account-menu__item:first-child {
+    margin-left: 0;
+}
+
+.account-menu__link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    transition-duration: 500ms;
+    transition-property: color;
+}
+
+.account-menu__link:active, .account-menu__link:focus, .account-menu__link:hover {
+    color: #79b260;
+}

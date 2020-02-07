@@ -1,0 +1,61 @@
+.navigation {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0px 2px 3px black;
+	li {
+		display: inline;
+		padding-bottom: 5px;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			border-bottom: 2px solid $colorSecondaryLight;
+			cursor: pointer;
+		}
+	}
+}
+
+.navigation_top {
+	li {
+		margin-left: 30px;
+	}
+}
+
+.navigation_bottom {
+	li {
+		margin-right: 30px;
+	}
+}
+
+.pingbull {
+	font-size: 2em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.pingbull_color {
+	color: $colorMainLight;
+	text-shadow: 0px 2px 5px black;
+	span {
+		color: $colorSecondaryMiddle;
+	}
+}
+
+.pingbull_black-and-wight {
+	color: $colorMainDark;
+	span {
+		color: $colorMainMiddle;
+	}
+}
+
+.besigned_by {
+	text-shadow: 0px 2px 3px black;
+	color: $colorMainLight;
+	span {
+		font-weight: 900;
+	}
+}
+
+hr {
+	padding: 0px;
+	margin: 0px;
+}

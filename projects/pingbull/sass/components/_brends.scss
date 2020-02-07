@@ -1,0 +1,35 @@
+.brends_wrapper {
+	background-color: $colorBackgroundLight;
+	hr {
+		height: 1px;
+		background: $colorMainMiddle;
+	}
+	.brends {
+		width: $widthX;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		img {
+			padding: 20px 50px;
+			transition: all 1s;
+			&:hover {
+				transform: scale(1.1);
+				transition: all 1s;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.brends_wrapper {
+		.brends {
+			width: auto;
+			flex-wrap: wrap;
+			.info__item {
+				width: auto;
+			}
+		}
+	}
+}

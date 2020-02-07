@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tirey</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/tirey_index.css">
+	<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="base">
+			<header class="header">
+				<div class="header__login">
+					<img src="img/phone_icon.png" alt="alt" class="phone">
+					<p>(044)123-45-67 (044)567-89-10</p>
+					<form id='for'>
+						<img src="img/face.png" alt="alt">
+						<input type="email" name="name" placeholder="login" required="">
+						<input type="password" name="name" placeholder="password" required="">
+						<a href="#" class="login_reg">Вход</a>
+						<span class="login_reg">|</span>
+						<a href="#" class="login_reg">Регистрация</a>
+						<a href="#" class="forget_pass">Забыли пароль?</a>
+					</form>
+					<div class="sub_img">
+						<img src="img/home_conor.png" alt="alt">
+						<img src="img/map_conor.png" alt="alt">
+						<img src="img/email_conor.png" alt="alt">
+					</div>
+				</div>
+				<div class="header__logo">
+					<img src="img/header_img.png" alt="alt">
+				</div>
+				<nav class="header__nav">
+					<ul>
+						<li><a href="">о компании</a></li>
+						<li><a href="">оплата</a></li>
+						<li><a href="">доставка</a></li>
+						<li><a href="">статьи</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+					<div>
+						<i class="fa fa-cart-plus fa-1x"></i>
+						<span class='header__nav_simple-text'>Товары</span><span class='header__nav_blue-text'> 0 </span>
+						<span class='header__nav_simple-text'>Cумму</span><span class='header__nav_blue-text'> 0,00 грн </span>
+					</div>
+				</nav>
+			</header>
+			<div class="serche">
+				<div class="serche__continer serche__continer_border">
+					<div class="serche__header">
+						<span>Диски:</span>
+						<span class="serche__header_upper">Поиск по автомобилю</span>
+						<span>Шины:</span>
+					</div>
+					<div class="serche__content">
+						<div class="serche__column">
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Марка </span>
+									<span class="serche__text-add">авто:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">BMW</option>
+										<option value="">Mersedes-Benz</option>
+										<option value="">Hunday</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Модель </span>
+									<span class="serche__text-add">автомобиля:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">X6</option>
+										<option value="">M3</option>
+										<option value="">X5</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Год выпуска </span>
+									<span class="serche__text-add">автомобиля:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">2017</option>
+										<option value="">2016</option>
+										<option value="">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Комплектация</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">4x4</option>
+										<option value="">2x4</option>
+										<option value="">2x2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="serche__column">
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Марка </span>
+									<span class="serche__text-add">авто:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">BMW</option>
+										<option value="">Mersedes-Benz</option>
+										<option value="">Hunday</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Модель </span>
+									<span class="serche__text-add">автомобиля:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">X6</option>
+										<option value="">M3</option>
+										<option value="">X5</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Год выпуска </span>
+									<span class="serche__text-add">автомобиля:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">2017</option>
+										<option value="">2016</option>
+										<option value="">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part">
+									<span>
+										<span class="serche__text-main">Комплектация</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">4x4</option>
+										<option value="">2x4</option>
+										<option value="">2x2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="serche__bottom">
+						<a href="">Поиск ...</a>
+					</div>
+				</div>
+				<div class="serche__continer serche__continer_border">
+					<div class="serche__header">
+						<span class="serche__header_upper">Поиск шин</span>
+					</div>
+					<div class="serche__content">
+						<div class="serche__column">
+							<div class="serche__item">
+								<div class="serche__part serche__part_sm">
+									<span>
+										<span class="serche__text-main">Размер:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_lg">
+									<select>
+										<option value="">145</option>
+										<option value="">165</option>
+										<option value="">185</option>
+									</select>
+									<span> / </span>
+									<select>
+										<option value="">145</option>
+										<option value="">165</option>
+										<option value="">185</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part serche__part_sm">
+									<span>
+										<span class="serche__text-main">R:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">itme</option>
+										<option value="">itme</option>
+										<option value="">itme</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part serche__part_sm">
+									<span>
+										<span class="serche__text-main">Сезон:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_md serche__part_checkbox">
+									<label for="for"> <input type="checkbox"> <span>лето</span></label>
+									<label for="for"> <input type="checkbox"> <span>зима</span></label>
+									<label for="for"> <input type="checkbox"> <span>всесез</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="serche__bottom">
+						<a href="">Поиск ...</a>
+					</div>
+				</div>
+				<div class="serche__continer serche__continer_border">
+					<div class="serche__header">
+						<span class="serche__header_upper">Поиск дисков</span>
+					</div>
+					<div class="serche__content">
+						<div class="serche__column serche__column_border-right ">
+							<div class="serche__item">
+								<div class="serche__part serche__part_lg">
+									<span>
+										<span class="serche__text-main">Диаметр </span>
+									<span class="serche__text-add">диска:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">14</option>
+										<option value="">13</option>
+										<option value="">12</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part serche__part_lg">
+									<span>
+										<span class="serche__text-main">Количество </span>
+									<span class="serche__text-add">крепёжных отверстий:</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item">
+								<div class="serche__part serche__part_lg">
+									<span>
+										<span class="serche__text-main">Диаметр </span>
+									<span class="serche__text-add">расположения крепёжных отверстий: </span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="serche__column ">
+							<div class="serche__item serche__item_column">
+								<div class="serche__part serche__part_sm">
+									<span>
+										<span class="serche__text-main">ДЦО </span>
+									<span class="serche__text-add">(диаметр центрального отверстия):</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">14</option>
+										<option value="">13</option>
+										<option value="">12</option>
+									</select>
+								</div>
+							</div>
+							<div class="serche__item serche__item_column">
+								<div class="serche__part serche__part_sm">
+									<span>
+										<span class="serche__text-main">ЕТ </span>
+									<span class="serche__text-add">(вылет диска):</span>
+									</span>
+								</div>
+								<div class="serche__part serche__part_sm">
+									<select>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="serche__bottom">
+						<a href="">Поиск ...</a>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<aside class="content__catalog">
+					<div class="content__catalog-title content__catalog-title_border-shadow content__catalog-title_lg">
+						<img src="img/catalog-img.png" alt="alt">
+						<span>каталог продукции:</span>
+					</div>
+					<div class="content__catalog-item content__catalog-item_simple">
+						<div class="content__catalog-title content__catalog-title_md">
+							<img src="img/poiner.png" alt="alt">
+							<span>шины</span>
+						</div>
+						<ul>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</div>
+					<div class="content__catalog-item content__catalog-item_simple">
+						<div class="content__catalog-title content__catalog-title_md">
+							<img src="img/poiner.png" alt="alt">
+							<span>болты</span>
+						</div>
+						<ul>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</div>
+					<div class="content__catalog-item content__catalog-item_simple">
+						<div class="content__catalog-title content__catalog-title_md">
+							<img src="img/poiner.png" alt="alt">
+							<span>диски</span>
+						</div>
+						<ul>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</div>
+				</aside>
+				<div class="content__main">
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+					<article class="content__item">
+						<header>
+							<span class='content__item_main'>Goodyear</span>
+							<span class='content__item_add'>Ultra Grip Extreme</span>
+						</header>
+						<div><img src="img/disk.png" alt="disk"></div>
+						<footer>90.00 грн.</footer>
+					</article>
+				</div>
+				<aside class="content__catalog">
+					<div class="content__catalog-title content__catalog-title_border-shadow content__catalog-title_lg">
+						<img src="img/catalog-img.png" alt="alt">
+						<span>каталог продукции:</span>
+					</div>
+					<div class="content__catalog-item content__catalog-item_checkbox">
+						<div class="content__catalog-title content__catalog-title_md">
+							<img src="img/poiner.png" alt="alt">
+							<span>шины</span>
+						</div>
+						<ul>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+						</ul>
+					</div>
+					<div class="content__catalog-item content__catalog-item_checkbox">
+						<div class="content__catalog-title content__catalog-title_md">
+							<img src="img/poiner.png" alt="alt">
+							<span>диски</span>
+						</div>
+						<ul>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+							<li><input type="checkbox"> <label for="for">Бренд 1</label></li>
+						</ul>
+					</div>
+
+				</aside>
+			</div>
+			<ul class="vender">
+				<li>
+					<a href=""><img src="img/brand_avon.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_bridgestore.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_conica.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_continental.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_dunlop.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_firelli.png" alt="alt"></a>
+				</li>
+				<li>
+					<a href=""><img src="img/brand_tire_factory.png" alt="alt"></a>
+				</li>
+
+				<li>
+					<a href=""><img src="img/brand_toyotires.png" alt="alt"></a>
+				</li>
+			</ul>
+			<footer class='link-in-botton'>
+				<ul>
+					<li>О компании</li>
+					<li>|</li>
+					<li>Доставка</li>
+					<li>|</li>
+					<li>Статьи</li>
+					<li>|</li>
+					<li>Контакты</li>
+				</ul>
+				<p>Создание сайта © Global Vision</p>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>

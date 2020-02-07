@@ -1,0 +1,18 @@
+include testimonial-radio
+include testimonial-slide
+include testimonial-label
+
+.container.container__testimonials#testimonials
+    .container-fixed
+        .testimonials
+            +testimonial-radio(1)
+            +testimonial-radio(2,true)
+            +testimonial-radio(3)
+            .testimonial-slides
+                +testimonial-slide('“Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking orward to start the next one asap.”',"Michael Hopkins")
+                +testimonial-slide('“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.”',"Petko Yovchevski")
+                +testimonial-slide('“So blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of wil”',"Eshe Petrucho")
+            .testimonial-labels
+                +testimonial-label(1)
+                +testimonial-label(2)
+                +testimonial-label(3)

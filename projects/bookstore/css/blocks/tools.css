@@ -1,0 +1,26 @@
+.tools {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);;
+}
+
+.tools__wrapper {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 840px) {
+    .tools__logo {
+        display: none;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    .tools__wrapper {
+        flex-direction: column;
+    }
+}

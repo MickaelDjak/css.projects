@@ -1,0 +1,15 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.social__link {
+    margin-left: 38px;
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+
+
+.social__link:hover, .social__link:active, .social__link:focus {
+    transform: scale(1.1);
+}

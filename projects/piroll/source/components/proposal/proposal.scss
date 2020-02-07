@@ -1,0 +1,102 @@
+@import "./../title/title.scss";
+@import "./../button/button.scss";
+
+.container__proposal {
+  background: $color-wh;
+}
+
+.proposal {
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+  > p {
+    width: width-of-element(2);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  form {
+    margin: 15px;
+    .form-name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+.proposal .contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cf_element {
+  textarea,
+  input {
+    padding: 18px 20px;
+    margin: 15px;
+    outline-color: $color-ca;
+    border: none;
+  }
+}
+
+.cf_element > .cf_w1 {
+  transition: all 1s;
+  width: width-of-element(2);
+}
+
+.cf_element > .cf_w2 {
+  transition: all 1s;
+  width: width-of-element(4.5);
+}
+
+@for $i from 1 through 10 {
+  .cf_element > .cf_h#{$i} {
+    height: 12px*$i;
+  }
+}
+
+@media screen and (max-width: width-break-screen(3)) {
+  .proposal {
+    padding: 50px 0;
+  }
+
+  .proposal .proposal_content {
+    width: auto;
+    padding: 20px 30px;
+    margin-bottom: 0;
+  }
+
+  .cf_element > .cf_w1 {
+    width: width-of-element(3);
+  }
+
+  .cf_element > .cf_w2 {
+    width: width-of-element(7.125);
+  }
+}
+
+@media screen and (max-width: width-break-screen(4)) {
+
+  .proposal form .form-name {
+    flex-direction: column;
+  }
+
+  .cf_element > .cf_w1 {
+    width: width-of-element(4.5);
+  }
+
+  .cf_element > .cf_w2 {
+    width: width-of-element(4.5);
+  }
+}
+
+@media screen and (max-width: width-break-screen(5)) {
+  .cf_element > .cf_w1 {
+    width: width-of-element(6);
+  }
+
+  .cf_element > .cf_w2 {
+    width: width-of-element(6);
+  }
+}

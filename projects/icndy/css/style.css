@@ -1,0 +1,11 @@
+@import "reset.css";
+@import "fonts.css";
+@import "core.css";
+@import "./blocks/header.css";
+@import "./blocks/logo.css";
+@import "blocks/menuUp.css";
+@import "blocks/menuDown.css";
+@import "./blocks/content.css";
+@import "./blocks/insta.css";
+@import "./blocks/footer.css";
+@import "./blocks/social.css";

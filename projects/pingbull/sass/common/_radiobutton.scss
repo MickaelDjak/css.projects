@@ -1,0 +1,24 @@
+@mixin radio-button($margin, $padding, $width, $heigh, $radiusOuter, $rediusInner, $back, $select) {
+	margin: $margin;
+	padding: $padding;
+	width: $width;
+	height: $heigh;
+	border-radius: $radiusOuter;
+	background: $back;
+	span {
+		display: block;
+		background: transparent;
+		width: $width;
+		height: $heigh;
+		border-radius: $rediusInner;
+		transform: scale(0);
+		transition: all 1s;
+	}
+	&.select {
+		span {
+			transform: scale(1.1);
+			transition: all 1s;
+			background: $select;
+		}
+	}
+}
