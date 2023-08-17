@@ -1,0 +1,1896 @@
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js!./source/pages/about/about.scss ***!
+  \*******************************************************************************************************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper-global {
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-size: 100%;
+  width: 100%;
+}
+.wrapper-global a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.container-fixed {
+  max-width: 1366px;
+  margin: auto;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 1461.62px) {
+  .wrapper-global {
+    line-height: 29.6671449872px;
+    font-size: 90%;
+  }
+  .container-fixed {
+    max-width: 1024.5px;
+  }
+}
+@media screen and (max-width: 1172.95005px) {
+  .wrapper-global {
+    line-height: 28.6905749937px;
+    font-size: 85%;
+  }
+  .container-fixed {
+    max-width: 768.375px;
+  }
+}
+@media screen and (max-width: 941.292415125px) {
+  .wrapper-global {
+    line-height: 27.7461513006px;
+    font-size: 80%;
+  }
+  .container-fixed {
+    max-width: 576.28125px;
+  }
+}
+@media screen and (max-width: 755.3871631378px) {
+  .wrapper-global {
+    line-height: 25.6616303998px;
+    font-size: 75%;
+  }
+  .container-fixed {
+    max-width: 432.2109375px;
+  }
+}
+@media screen and (max-width: 606.1981984181px) {
+  .wrapper-global {
+    line-height: 24.5415643815px;
+    font-size: 70%;
+  }
+  .container-fixed {
+    max-width: 324.158203125px;
+  }
+}
+.container__header {
+  background: #ffffff;
+  height: 100px;
+}
+
+.header-glue {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 5px 15px 0 #838383;
+  transition: box-shadow 0.5s;
+}
+
+.header-glue header {
+  padding: 18px 0;
+  transition: all 1s;
+}
+
+.header-glue header .header-logo {
+  transform: scale(0.8);
+}
+.header-glue header .header-logo:hover {
+  transform: scale(1.1);
+}
+
+header {
+  padding: 38px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s;
+}
+
+header .header-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .header-logo {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+header .header-logo:hover {
+  transition: all 0.5s;
+  transform: scale(1.4);
+}
+
+header .header-trigger {
+  display: none;
+}
+
+header .header-navigation {
+  transition: all 1s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header .header-navigation li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+header .header-navigation li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+header .header-navigation li:hover a {
+  color: #10c9c3;
+}
+
+@media screen and (max-width: 941.292415125px) {
+  .container__header {
+    height: auto;
+  }
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header .header-trigger {
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  header .header-trigger:hover {
+    color: #10c9c3;
+  }
+  header .header-brand {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  header .header-navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-navigation-show {
+    display: flex;
+    height: 100%;
+  }
+}
+.container__footer {
+  background: #141414;
+  color: #ffffff;
+}
+.container__footer footer {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #bcbcbc;
+}
+.container__footer footer .footer-copyrighted {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer footer .footer-copyrighted .footer-copyrighted-inc {
+  font-size: 1.125em;
+  font-weight: 700;
+  padding-bottom: 27px;
+  color: #ffffff;
+}
+.container__footer footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.5;
+  align-items: center;
+}
+.container__footer footer .footer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer footer .footer-social-net {
+  display: flex;
+  flex-direction: column;
+  margin-left: 135px;
+}
+.container__footer footer a {
+  color: #bcbcbc;
+}
+.container__footer footer li:hover a {
+  color: #10c9c3;
+}
+
+@media screen and (max-width: 1172.95005px) {
+  .container__footer footer .footer-copyrighted .footer-copyrighted-inc {
+    padding-bottom: 27px;
+  }
+  .container__footer footer .footer-contacts {
+    flex-grow: 0;
+  }
+  .container__footer footer .footer-social-net {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 941.292415125px) {
+  .container__footer footer {
+    padding: 50px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container__footer footer ul {
+    padding: 15px 0;
+  }
+}
+.container__header {
+  background: #ffffff;
+  height: 100px;
+}
+
+.header-glue {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 5px 15px 0 #838383;
+  transition: box-shadow 0.5s;
+}
+
+.header-glue header {
+  padding: 18px 0;
+  transition: all 1s;
+}
+
+.header-glue header .header-logo {
+  transform: scale(0.8);
+}
+.header-glue header .header-logo:hover {
+  transform: scale(1.1);
+}
+
+header {
+  padding: 38px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s;
+}
+
+header .header-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .header-logo {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+header .header-logo:hover {
+  transition: all 0.5s;
+  transform: scale(1.4);
+}
+
+header .header-trigger {
+  display: none;
+}
+
+header .header-navigation {
+  transition: all 1s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header .header-navigation li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+header .header-navigation li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+header .header-navigation li:hover a {
+  color: #10c9c3;
+}
+
+@media screen and (max-width: 941.292415125px) {
+  .container__header {
+    height: auto;
+  }
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header .header-trigger {
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  header .header-trigger:hover {
+    color: #10c9c3;
+  }
+  header .header-brand {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  header .header-navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-navigation-show {
+    display: flex;
+    height: 100%;
+  }
+}
+.title {
+  font-size: 2em;
+  padding-bottom: 32px;
+  font-weight: 500;
+}
+
+.btn {
+  box-sizing: border-box;
+  background: #10c9c3;
+  border: 1px solid #10c9c3;
+  width: 178px;
+  height: 52px;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  transition: 0.25s all;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #10c9c3;
+}
+
+.container__banner {
+  background: #cdd0d5;
+  background-image: url(assets/images/header_back.5e5de02c.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container-fixed__banner {
+  display: flex;
+}
+
+.container-fixed__banner .banner-left {
+  width: 683px;
+}
+
+.container-fixed__banner .banner-right {
+  width: 683px;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 200px;
+}
+.container-fixed__banner .banner-right .banner-content {
+  padding-bottom: 39px;
+}
+
+@media screen and (max-width: 941.292415125px) {
+  .container-fixed__banner .banner-left {
+    display: none;
+  }
+  .container-fixed__banner .banner-right {
+    width: 1366px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 606.1981984181px) {
+  .container__banner {
+    background-size: cover;
+  }
+}
+.container__numbers {
+  background: #10c9c3;
+}
+.container__numbers .numbers {
+  color: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container__numbers .numbers .number-item {
+  display: flex;
+  flex-direction: row;
+}
+.container__numbers .numbers .number-item i {
+  padding-right: 27px;
+  transition: all 1s;
+}
+.container__numbers .numbers .number-item .number-order {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.container__numbers .numbers .number-item:hover i {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 941.292415125px) {
+  .container__numbers .numbers {
+    padding: 50px;
+    flex-direction: column;
+  }
+  .container__numbers .numbers .number-item {
+    padding: 10px 0;
+  }
+  .container__numbers .numbers .number-item i {
+    width: 30%;
+    text-align: center;
+  }
+  .container__numbers .numbers .number-item .number-order {
+    width: 70%;
+    text-align: center;
+  }
+}
+.container__skills {
+  background: #e9e9e9;
+}
+
+.container-fixed__skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__skills .skills {
+  background: #f8f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 164px 0;
+  width: 683px;
+}
+.container__skills .skills .skill-item > .skill-description {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.container__skills .skills .skill-item > .skill-description .skill-percent {
+  padding-left: 15px;
+}
+.container__skills .skills .skill-item > .skill-progress {
+  padding-bottom: 40px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background {
+  width: 500px;
+  height: 3px;
+  background-color: #dddddd;
+  position: relative;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar {
+  height: 3px;
+  background-color: #10c9c3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-1 {
+  width: 5px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-2 {
+  width: 10px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-3 {
+  width: 15px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-4 {
+  width: 20px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-5 {
+  width: 25px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-6 {
+  width: 30px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-7 {
+  width: 35px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-8 {
+  width: 40px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-9 {
+  width: 45px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-10 {
+  width: 50px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-11 {
+  width: 55px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-12 {
+  width: 60px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-13 {
+  width: 65px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-14 {
+  width: 70px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-15 {
+  width: 75px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-16 {
+  width: 80px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-17 {
+  width: 85px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-18 {
+  width: 90px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-19 {
+  width: 95px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-20 {
+  width: 100px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-21 {
+  width: 105px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-22 {
+  width: 110px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-23 {
+  width: 115px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-24 {
+  width: 120px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-25 {
+  width: 125px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-26 {
+  width: 130px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-27 {
+  width: 135px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-28 {
+  width: 140px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-29 {
+  width: 145px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-30 {
+  width: 150px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-31 {
+  width: 155px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-32 {
+  width: 160px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-33 {
+  width: 165px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-34 {
+  width: 170px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-35 {
+  width: 175px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-36 {
+  width: 180px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-37 {
+  width: 185px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-38 {
+  width: 190px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-39 {
+  width: 195px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-40 {
+  width: 200px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-41 {
+  width: 205px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-42 {
+  width: 210px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-43 {
+  width: 215px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-44 {
+  width: 220px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-45 {
+  width: 225px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-46 {
+  width: 230px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-47 {
+  width: 235px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-48 {
+  width: 240px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-49 {
+  width: 245px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-50 {
+  width: 250px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-51 {
+  width: 255px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-52 {
+  width: 260px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-53 {
+  width: 265px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-54 {
+  width: 270px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-55 {
+  width: 275px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-56 {
+  width: 280px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-57 {
+  width: 285px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-58 {
+  width: 290px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-59 {
+  width: 295px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-60 {
+  width: 300px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-61 {
+  width: 305px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-62 {
+  width: 310px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-63 {
+  width: 315px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-64 {
+  width: 320px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-65 {
+  width: 325px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-66 {
+  width: 330px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-67 {
+  width: 335px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-68 {
+  width: 340px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-69 {
+  width: 345px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-70 {
+  width: 350px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-71 {
+  width: 355px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-72 {
+  width: 360px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-73 {
+  width: 365px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-74 {
+  width: 370px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-75 {
+  width: 375px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-76 {
+  width: 380px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-77 {
+  width: 385px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-78 {
+  width: 390px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-79 {
+  width: 395px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-80 {
+  width: 400px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-81 {
+  width: 405px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-82 {
+  width: 410px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-83 {
+  width: 415px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-84 {
+  width: 420px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-85 {
+  width: 425px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-86 {
+  width: 430px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-87 {
+  width: 435px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-88 {
+  width: 440px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-89 {
+  width: 445px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-90 {
+  width: 450px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-91 {
+  width: 455px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-92 {
+  width: 460px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-93 {
+  width: 465px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-94 {
+  width: 470px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-95 {
+  width: 475px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-96 {
+  width: 480px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-97 {
+  width: 485px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-98 {
+  width: 490px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-99 {
+  width: 495px;
+}
+.container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-100 {
+  width: 500px;
+}
+.container__skills .skills .skill-item:last-child .skill-progress {
+  padding-bottom: 0;
+}
+
+.container__skills .skill-img {
+  display: block;
+  width: 683px;
+  height: inherit;
+  background-image: url(assets/images/skill-img.3ad69dff.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1172.95005px) {
+  .container-fixed__skills {
+    flex-direction: column;
+  }
+  .container__skills .skills {
+    padding: 50px 0;
+    width: auto;
+  }
+  .container__skills .skill-img {
+    width: auto;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 941.292415125px) {
+  .container__skills .skill-img {
+    width: auto;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 755.3871631378px) {
+  .container__skills .skill-img {
+    width: auto;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1461.62px) {
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background {
+    width: 400px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-1 {
+    width: 4px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-2 {
+    width: 8px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-3 {
+    width: 12px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-4 {
+    width: 16px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-5 {
+    width: 20px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-6 {
+    width: 24px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-7 {
+    width: 28px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-8 {
+    width: 32px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-9 {
+    width: 36px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-10 {
+    width: 40px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-11 {
+    width: 44px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-12 {
+    width: 48px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-13 {
+    width: 52px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-14 {
+    width: 56px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-15 {
+    width: 60px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-16 {
+    width: 64px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-17 {
+    width: 68px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-18 {
+    width: 72px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-19 {
+    width: 76px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-20 {
+    width: 80px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-21 {
+    width: 84px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-22 {
+    width: 88px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-23 {
+    width: 92px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-24 {
+    width: 96px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-25 {
+    width: 100px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-26 {
+    width: 104px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-27 {
+    width: 108px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-28 {
+    width: 112px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-29 {
+    width: 116px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-30 {
+    width: 120px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-31 {
+    width: 124px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-32 {
+    width: 128px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-33 {
+    width: 132px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-34 {
+    width: 136px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-35 {
+    width: 140px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-36 {
+    width: 144px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-37 {
+    width: 148px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-38 {
+    width: 152px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-39 {
+    width: 156px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-40 {
+    width: 160px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-41 {
+    width: 164px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-42 {
+    width: 168px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-43 {
+    width: 172px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-44 {
+    width: 176px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-45 {
+    width: 180px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-46 {
+    width: 184px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-47 {
+    width: 188px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-48 {
+    width: 192px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-49 {
+    width: 196px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-50 {
+    width: 200px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-51 {
+    width: 204px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-52 {
+    width: 208px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-53 {
+    width: 212px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-54 {
+    width: 216px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-55 {
+    width: 220px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-56 {
+    width: 224px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-57 {
+    width: 228px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-58 {
+    width: 232px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-59 {
+    width: 236px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-60 {
+    width: 240px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-61 {
+    width: 244px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-62 {
+    width: 248px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-63 {
+    width: 252px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-64 {
+    width: 256px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-65 {
+    width: 260px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-66 {
+    width: 264px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-67 {
+    width: 268px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-68 {
+    width: 272px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-69 {
+    width: 276px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-70 {
+    width: 280px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-71 {
+    width: 284px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-72 {
+    width: 288px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-73 {
+    width: 292px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-74 {
+    width: 296px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-75 {
+    width: 300px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-76 {
+    width: 304px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-77 {
+    width: 308px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-78 {
+    width: 312px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-79 {
+    width: 316px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-80 {
+    width: 320px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-81 {
+    width: 324px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-82 {
+    width: 328px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-83 {
+    width: 332px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-84 {
+    width: 336px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-85 {
+    width: 340px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-86 {
+    width: 344px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-87 {
+    width: 348px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-88 {
+    width: 352px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-89 {
+    width: 356px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-90 {
+    width: 360px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-91 {
+    width: 364px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-92 {
+    width: 368px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-93 {
+    width: 372px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-94 {
+    width: 376px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-95 {
+    width: 380px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-96 {
+    width: 384px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-97 {
+    width: 388px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-98 {
+    width: 392px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-99 {
+    width: 396px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-100 {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 755.3871631378px) {
+  .container__skills .skills .skill-item > .skill-progress {
+    padding-bottom: 20px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background {
+    width: 350px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-1 {
+    width: 3.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-2 {
+    width: 7px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-3 {
+    width: 10.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-4 {
+    width: 14px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-5 {
+    width: 17.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-6 {
+    width: 21px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-7 {
+    width: 24.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-8 {
+    width: 28px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-9 {
+    width: 31.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-10 {
+    width: 35px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-11 {
+    width: 38.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-12 {
+    width: 42px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-13 {
+    width: 45.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-14 {
+    width: 49px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-15 {
+    width: 52.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-16 {
+    width: 56px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-17 {
+    width: 59.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-18 {
+    width: 63px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-19 {
+    width: 66.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-20 {
+    width: 70px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-21 {
+    width: 73.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-22 {
+    width: 77px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-23 {
+    width: 80.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-24 {
+    width: 84px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-25 {
+    width: 87.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-26 {
+    width: 91px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-27 {
+    width: 94.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-28 {
+    width: 98px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-29 {
+    width: 101.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-30 {
+    width: 105px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-31 {
+    width: 108.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-32 {
+    width: 112px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-33 {
+    width: 115.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-34 {
+    width: 119px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-35 {
+    width: 122.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-36 {
+    width: 126px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-37 {
+    width: 129.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-38 {
+    width: 133px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-39 {
+    width: 136.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-40 {
+    width: 140px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-41 {
+    width: 143.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-42 {
+    width: 147px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-43 {
+    width: 150.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-44 {
+    width: 154px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-45 {
+    width: 157.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-46 {
+    width: 161px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-47 {
+    width: 164.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-48 {
+    width: 168px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-49 {
+    width: 171.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-50 {
+    width: 175px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-51 {
+    width: 178.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-52 {
+    width: 182px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-53 {
+    width: 185.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-54 {
+    width: 189px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-55 {
+    width: 192.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-56 {
+    width: 196px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-57 {
+    width: 199.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-58 {
+    width: 203px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-59 {
+    width: 206.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-60 {
+    width: 210px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-61 {
+    width: 213.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-62 {
+    width: 217px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-63 {
+    width: 220.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-64 {
+    width: 224px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-65 {
+    width: 227.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-66 {
+    width: 231px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-67 {
+    width: 234.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-68 {
+    width: 238px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-69 {
+    width: 241.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-70 {
+    width: 245px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-71 {
+    width: 248.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-72 {
+    width: 252px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-73 {
+    width: 255.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-74 {
+    width: 259px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-75 {
+    width: 262.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-76 {
+    width: 266px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-77 {
+    width: 269.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-78 {
+    width: 273px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-79 {
+    width: 276.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-80 {
+    width: 280px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-81 {
+    width: 283.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-82 {
+    width: 287px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-83 {
+    width: 290.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-84 {
+    width: 294px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-85 {
+    width: 297.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-86 {
+    width: 301px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-87 {
+    width: 304.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-88 {
+    width: 308px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-89 {
+    width: 311.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-90 {
+    width: 315px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-91 {
+    width: 318.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-92 {
+    width: 322px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-93 {
+    width: 325.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-94 {
+    width: 329px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-95 {
+    width: 332.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-96 {
+    width: 336px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-97 {
+    width: 339.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-98 {
+    width: 343px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-99 {
+    width: 346.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-100 {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 606.1981984181px) {
+  .container__skills .skills .skill-item > .skill-progress {
+    padding-bottom: 15px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background {
+    width: 250px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-1 {
+    width: 2.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-2 {
+    width: 5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-3 {
+    width: 7.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-4 {
+    width: 10px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-5 {
+    width: 12.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-6 {
+    width: 15px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-7 {
+    width: 17.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-8 {
+    width: 20px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-9 {
+    width: 22.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-10 {
+    width: 25px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-11 {
+    width: 27.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-12 {
+    width: 30px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-13 {
+    width: 32.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-14 {
+    width: 35px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-15 {
+    width: 37.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-16 {
+    width: 40px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-17 {
+    width: 42.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-18 {
+    width: 45px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-19 {
+    width: 47.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-20 {
+    width: 50px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-21 {
+    width: 52.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-22 {
+    width: 55px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-23 {
+    width: 57.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-24 {
+    width: 60px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-25 {
+    width: 62.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-26 {
+    width: 65px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-27 {
+    width: 67.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-28 {
+    width: 70px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-29 {
+    width: 72.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-30 {
+    width: 75px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-31 {
+    width: 77.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-32 {
+    width: 80px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-33 {
+    width: 82.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-34 {
+    width: 85px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-35 {
+    width: 87.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-36 {
+    width: 90px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-37 {
+    width: 92.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-38 {
+    width: 95px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-39 {
+    width: 97.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-40 {
+    width: 100px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-41 {
+    width: 102.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-42 {
+    width: 105px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-43 {
+    width: 107.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-44 {
+    width: 110px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-45 {
+    width: 112.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-46 {
+    width: 115px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-47 {
+    width: 117.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-48 {
+    width: 120px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-49 {
+    width: 122.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-50 {
+    width: 125px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-51 {
+    width: 127.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-52 {
+    width: 130px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-53 {
+    width: 132.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-54 {
+    width: 135px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-55 {
+    width: 137.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-56 {
+    width: 140px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-57 {
+    width: 142.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-58 {
+    width: 145px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-59 {
+    width: 147.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-60 {
+    width: 150px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-61 {
+    width: 152.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-62 {
+    width: 155px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-63 {
+    width: 157.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-64 {
+    width: 160px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-65 {
+    width: 162.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-66 {
+    width: 165px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-67 {
+    width: 167.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-68 {
+    width: 170px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-69 {
+    width: 172.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-70 {
+    width: 175px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-71 {
+    width: 177.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-72 {
+    width: 180px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-73 {
+    width: 182.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-74 {
+    width: 185px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-75 {
+    width: 187.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-76 {
+    width: 190px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-77 {
+    width: 192.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-78 {
+    width: 195px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-79 {
+    width: 197.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-80 {
+    width: 200px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-81 {
+    width: 202.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-82 {
+    width: 205px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-83 {
+    width: 207.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-84 {
+    width: 210px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-85 {
+    width: 212.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-86 {
+    width: 215px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-87 {
+    width: 217.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-88 {
+    width: 220px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-89 {
+    width: 222.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-90 {
+    width: 225px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-91 {
+    width: 227.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-92 {
+    width: 230px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-93 {
+    width: 232.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-94 {
+    width: 235px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-95 {
+    width: 237.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-96 {
+    width: 240px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-97 {
+    width: 242.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-98 {
+    width: 245px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-99 {
+    width: 247.5px;
+  }
+  .container__skills .skills .skill-item > .skill-progress .skill-progress-background .skill-progress-bar.skill-progress-bar-100 {
+    width: 250px;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about .content {
+  width: 683px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 39px;
+  text-align: center;
+}
+
+@media screen and (max-width: 941.292415125px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about .content {
+    width: auto;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.container__footer {
+  background: #141414;
+  color: #ffffff;
+}
+.container__footer footer {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #bcbcbc;
+}
+.container__footer footer .footer-copyrighted {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer footer .footer-copyrighted .footer-copyrighted-inc {
+  font-size: 1.125em;
+  font-weight: 700;
+  padding-bottom: 27px;
+  color: #ffffff;
+}
+.container__footer footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.5;
+  align-items: center;
+}
+.container__footer footer .footer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer footer .footer-social-net {
+  display: flex;
+  flex-direction: column;
+  margin-left: 135px;
+}
+.container__footer footer a {
+  color: #bcbcbc;
+}
+.container__footer footer li:hover a {
+  color: #10c9c3;
+}
+
+@media screen and (max-width: 1172.95005px) {
+  .container__footer footer .footer-copyrighted .footer-copyrighted-inc {
+    padding-bottom: 27px;
+  }
+  .container__footer footer .footer-contacts {
+    flex-grow: 0;
+  }
+  .container__footer footer .footer-social-net {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 941.292415125px) {
+  .container__footer footer {
+    padding: 50px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container__footer footer ul {
+    padding: 15px 0;
+  }
+}
+
+/*# sourceMappingURL=about.css.map*/

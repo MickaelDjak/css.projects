@@ -1,9 +1,13 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+    mode: "development",
     devtool: "source-map",
+    stats: {
+        children: true,
+    },
     entry: {
         "index": __dirname + "/source/pages/index/index.js",
         "home": __dirname + "/source/pages/home/home.js",
@@ -32,41 +36,24 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    use: [
-                        {
-                            loader: "css-loader",
-                            options: {
-                                sourceMap: true,
-                                minimize: true,
-                            }
-                        },
-                        {
-                            loader: "resolve-url-loader",
-                        },
-                        {
-                            loader: "sass-loader",
-                            options: {
-                                sourceMap: true
-                            }
-                        }
-                    ],
-                    publicPath: "../",
-                }),
-
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'resolve-url-loader',
+                    'sass-loader'
+                ]
             },
             {
-                test: /\.(png|jpg|jpgg|gif)$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: 'img/',
-                }
-            }
+                test: /\.(png|jpg|jpeg|svg|ico)/,
+                type: 'asset/resource',
+                generator: {
+                  filename: 'assets/images/[name].[hash:8][ext]',
+                },
+              },
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([
+        new CopyWebpackPlugin({ patterns: [
             {
                 from: __dirname + '/source/fonts/Icon_font_7_stroke/pe-icon-7-stroke/fonts',
                 to: __dirname + '/public/fonts'
@@ -79,7 +66,7 @@ module.exports = {
                 from: __dirname + '/source/video',
                 to: __dirname + '/public/video'
             }
-        ]),
+        ]}),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             chunks: ['index'],
@@ -105,8 +92,6 @@ module.exports = {
             chunks: ['about'],
             template: __dirname + '/source/pages/about/about.pug'
         }),
-        new ExtractTextPlugin({
-            filename: './css/[name].css'
-        }),
+        new MiniCssExtractPlugin({})
     ]
 };
