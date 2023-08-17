@@ -72,6 +72,10 @@ header .header-top .header-top__aray a:hover {
 	background: none;
 }
 
+#slaider {
+	padding: 50px 0;
+} 
+
 #hexGrid,
 header .header-bottom,
 header .header-top,
@@ -241,10 +245,10 @@ header .header-bottom .triangle-down {
 		padding-bottom: 4.4%
 	}
 	.hex {
-		width: 20%
+		width: 25%
 	}
-	.hex:nth-child(9n+6) {
-		margin-left: 10%
+	.hex:nth-child(7n+5) {
+		margin-left: 12.5%
 	}
 }
 
@@ -291,8 +295,8 @@ header .header-bottom .triangle-down {
 }
 
 #about {
+	padding: 50px 0;
 	background: #ff6f00;
-
 	-webkit-box-orient: horizontal;
 	-ms-flex-direction: column;
 	flex-direction: column;
@@ -498,7 +502,7 @@ header .header-bottom .triangle-down {
 }
 
 #get_in_touch {
-	padding: 25px 100px 10px;
+	padding: 50px;
 	background: #323232;
 	color: #e0e0e0;
 }
@@ -584,6 +588,10 @@ header .header-bottom .triangle-down {
 	padding-bottom: 40px
 }
 
+#get_in_touch .get_in_touch__contnt .get_in_touch__info div {
+	padding: 10px 0
+}
+
 #get_in_touch .get_in_touch__contnt .get_in_touch__info div i {
 	color: #ff6f00;
 	padding-right: 20px;
@@ -624,7 +632,7 @@ header .header-bottom .triangle-down {
 	}
 }
 #skill {
-	padding: 0px 50px 50px;
+	padding: 50px;
 	background: #323232;
 	color: #fff;
 }
@@ -640,9 +648,9 @@ header .header-bottom .triangle-down {
 }
 
 #skill .skill_list img {
-	width: 100px;
-	height: 100px;
-	padding: 10px 30px;
+	width: 60px;
+	height: 60px;
+	padding: 9px 21px;
 	transition: all 1s;
 	-webkit-filter: sepia(1);
 	filter: sepia(1);
@@ -654,12 +662,6 @@ header .header-bottom .triangle-down {
 	transform: scale(1.1);
 	-webkit-filter: sepia(1);
 	filter: sepia(0);
-}
-
-@media screen and (max-width:650px) {
-	#skill {
-		padding-top: 0px;
-	}
 }
 
 footer .header-top {
