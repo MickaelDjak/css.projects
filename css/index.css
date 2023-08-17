@@ -240,29 +240,16 @@ header .header-bottom .triangle-down {
 	color: #fff
 }
 
-@media (min-width:1201px) {
-	#hexGrid {
-		padding-bottom: 4.4%
-	}
-	.hex {
-		width: 25%
-	}
-	.hex:nth-child(7n+5) {
-		margin-left: 12.5%
-	}
+#hexGrid {
+	padding-bottom: 5.5%
+}
+.hex {
+	width: 25%
+}
+.hex:nth-child(7n+5) {
+	margin-left: 12.5%
 }
 
-@media (max-width:1200px) and (min-width:901px) {
-	#hexGrid {
-		padding-bottom: 5.5%
-	}
-	.hex {
-		width: 25%
-	}
-	.hex:nth-child(7n+5) {
-		margin-left: 12.5%
-	}
-}
 
 @media (max-width:900px) and (min-width:601px) {
 	#hexGrid {
@@ -270,6 +257,9 @@ header .header-bottom .triangle-down {
 	}
 	.hex {
 		width: 33.333%
+	}
+	.hex:nth-child(7n+5) {
+		margin-left: 0%
 	}
 	.hex:nth-child(5n+4) {
 		margin-left: 16.666%
@@ -282,6 +272,12 @@ header .header-bottom .triangle-down {
 	}
 	.hex {
 		width: 50%
+	}
+	.hex:nth-child(7n+5) {
+		margin-left: 0%
+	}
+	.hex:nth-child(5n+4) {
+		margin-left: 0%
 	}
 	.hex:nth-child(3n+3) {
 		margin-left: 25%
